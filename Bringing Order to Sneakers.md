@@ -13,7 +13,7 @@ Quote from the StockX team:
 # Plan
 I am thinking of two sub-projects.
 - To use PageRank Algorithms to rank the importance of each sneaker. An updated version of this implementation will include the factors of prices. Compare this with a simple rank given by a weighted average between frequency and mean prices.
-- To break the datasets into to parts, and try to predict the prices.
+- To break the datasets into two parts, and try to predict the prices.
 
 # Task 1: Ranking
 
