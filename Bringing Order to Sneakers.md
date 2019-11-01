@@ -13,6 +13,8 @@ Quote from the StockX team:
 # Plan
 I am thinking of two sub-projects.
 - To use PageRank Algorithms to rank the importance of each sneaker. An updated version of this implementation will include the factors of prices. Compare this with a simple rank given by a weighted average between frequency and mean prices.
+  - Compare the ranking given by the transition matrix and the rankings of simple frequency
+  - Plot the variance and mean of the net profit (sale price - retail price) and see if the *importance* has any relationship with the profit
 - To break the datasets into two parts, and try to predict the prices.
 
 # Task 1: Ranking
