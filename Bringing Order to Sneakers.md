@@ -1,3 +1,8 @@
+markdown: kramdown
+
+kramdown:
+  input: GFM
+ 
 # Motivation
 The cult of sneaker is an interesting derivation of the basketball sports. As a fervid basketball fan, I came across the [StockX's Data Contest dataset](https://stockx.com/news/the-2019-data-contest/). I decided to apply some of the skills I learned from the Center of Data Science of NYU on this dataset, and hopefully find some interesting patterns.
 
@@ -20,5 +25,9 @@ I am thinking of two sub-projects.
 # Task 1: Ranking
 
 I came across the PageRank algorithms in my "Optimization and Computational Linear Algebra" course during my first semester at NYU. I implemented a variation of PageRank algorithms to rank the NBA teams based on their records against each other, and later take the scores in the game in account. I realized that such idea may also be applied to the Sneakers dataset on hand: **Can I rank these sneakers based on the frequencies of purchases, and also later add prices in my analysis?**
+
+The PageRank algorithm imagines a 'drunk' surfer randomly clicking the pages, and the importance of a webpage is quantified by *How much time he spends on each website*. I mimiced this idea in my analysis by imagining a "drunk sneaker buyer" randomly purchasing sneakers. There are 50 unique models in total. When the buyer bought model A after buying model B, I defined that there is a *link* from model A to model B.
+
+Going through the data table row by row, the drunk buyer is constantly creating a link between two models. Matrix $\textbf{M}$ records these links. $M_{i,j}$ represents number of times the buyer buys $j$ after buying $i$.
 
 # Task 2: Price Prediction
