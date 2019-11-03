@@ -139,6 +139,7 @@ array([1.01212683, 0.6617741 , 0.83437669, 1.10138629, 1.38773063,
 Now let us visualize the rankings, and compare it to the rankings by simple frequencies of sneakers.
 
 ```python
+# ranking by pagerank
 rank = dict(zip(mu_transpose[0], shoes_code.keys()))
 sorted_rank = sorted(rank.keys(),reverse = True)
 sorted_rank_name = [rank[i] for i in sorted_rank]
@@ -148,6 +149,14 @@ fig = plt.figure(figsize=(20,5))
 rank_bar = plt.bar(height = sorted_rank, x = sorted_rank_name)
 plt.xticks(ticks = sorted_rank_name, rotation = 90)
 plt.show()
+
+# ranking by frequency
+freq_dict = dict(zip(freq.index, freq['Brand']))
+fig2 = plt.figure(figsize=(20,5))
+freq_bar = plt.bar(height = list(freq_dict.values()), x = list(freq_dict.keys()))
+plt.xticks(ticks = list(freq_dict.keys()), rotation = 90)
+plt.show()
+
 ```
 **Ranking by PageRank**
 ![alt text](https://github.com/ZichangYe/SneakersAnalytics/blob/master/Rank_PageRank.png "Ranking By PageRank")
@@ -158,6 +167,8 @@ plt.show()
 Obvious they are different. We can make some observations:
 
 - The ranking given by the PageRank is smoother than the simple frequency.
-- 
+- The Top 10 is definitely not exactly the same. 
+
+Which one is more useful? Linking back to our original question, I am trying to find the most important sneakers, which are the ones that gives highest net profit. Therefore, the next step is going to bring the metric of 'net profit = sale price - retail price', and see whether the sneaker with higher net profit on average will have a higher ranking. We will visualize this first.
 
 # Task 2: Price Prediction
