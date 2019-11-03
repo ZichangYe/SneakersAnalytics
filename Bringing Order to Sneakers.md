@@ -149,5 +149,15 @@ rank_bar = plt.bar(height = sorted_rank, x = sorted_rank_name)
 plt.xticks(ticks = sorted_rank_name, rotation = 90)
 plt.show()
 ```
+**Ranking by PageRank**
+![alt text](https://github.com/ZichangYe/SneakersAnalytics/blob/master/Rank_PageRank.png "Ranking By PageRank")
+
+**Ranking by Frequency**
+![alt text](https://github.com/ZichangYe/SneakersAnalytics/blob/master/Rank_Simple_Frequency.png "Ranking By Frequency")
+
+Obvious they are different. We can make some observations:
+
+- The ranking given by the PageRank is smoother than the simple frequency.
+- 
 
 # Task 2: Price Prediction
