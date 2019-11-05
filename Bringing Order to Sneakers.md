@@ -189,9 +189,7 @@ Which one is more useful? *Thinking back to our original question*, I am trying 
 
 # Conclusion
 
-The PageRank is not very informational in terms of telling us the average profitability of each sneaker, but it can help me find a stably profitable sneaker. 
-
-To really explain this, we need to go back to where PageRank was used at the first place. In the original setting, the webpage with the higher ranking is the one that has more links directed into. In our problem, the sneaker is ranked as higher because it has more different shoes purchased one row before itself own record. In long run, the most important sneaker is the sneaker where the 'drunk sneaker buyer' (remember him?) spends the most time on.
+In the original setting, the webpage with the higher ranking is the one that has more links directed into. In our problem, the sneaker is ranked as higher because it has more different shoes purchased one row before itself own record. In long run, the most important sneaker is the sneaker where the 'drunk sneaker buyer' (remember him?) spends the most time on.
 
 This is not necessarily a bad assumption. If we have absolutely no information about a new customer, it is reasonable to assume that he or she to have a random purchasing pattern. Thus, it gives us a guidance about what the consumer might purchase when we know nothing about him or her.
 
@@ -206,4 +204,4 @@ Few future updates can be implemented:
 - Estimate the demand of each sneaker
 
 
-2019 Copyright@Zichang Ye
+2019 Copyright @Zichang Ye
