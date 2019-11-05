@@ -33,12 +33,12 @@ From this we know that "adidas-Yeezy-Boost-350-V2-Butter" is the most frequent s
 
 # Plan
 I am thinking of two sub-projects.
-- To use PageRank Algorithms to rank the importance of each sneaker. An updated version of this implementation will include the factors of prices. Compare this with a simple rank given by a weighted average between frequency and mean prices.
+- To use PageRank Algorithms to rank the importance of each sneaker. An updated version of this implementation will include the factors of prices. Compare this with a simple rank given by frequency.
   - Compare the ranking given by the transition matrix and the rankings of simple frequency
-  - Plot the variance and mean of the net profit (sale price - retail price) and see if the *importance* has any relationship with the profit (**Spoiler Alert**: Unfortunately, my ranking method doesn't gives much information about profitability)
-- To break the datasets into two parts, and try to predict the prices.
-
-# Task 1: Ranking
+  - Plot the variance and mean of the net profit (sale price - retail price) and see if the *importance* has any relationship with the profit 
+  - Evaluation of ranking: how well does it predict the profitability?
+  
+# Task: Ranking
 
 I came across the PageRank algorithms in my "Optimization and Computational Linear Algebra" course during my first semester at NYU. I implemented a variation of PageRank algorithms to rank the NBA teams based on their records against each other, and later take the scores in the game in account. I realized that such idea may also be applied to the Sneakers dataset on hand: **Can I rank these sneakers based on this idea, and also later add prices in my analysis?**
 
@@ -168,6 +168,22 @@ Obvious they are different. We can make some observations:
 
 - The ranking given by the PageRank is smoother than the simple frequency.
 - The Top 10 is definitely not exactly the same. 
+
+## Visualizing the rankings with mean and standard deviation of net profits
+
+**Mean of Net Profits**
+! [alt_text](https://github.com/ZichangYe/SneakersAnalytics/blob/master/mean_profit_pagerank.png "Mean Profit by PageRank")
+! [alt_text](https://github.com/ZichangYe/SneakersAnalytics/blob/master/mean_profit_freq.png "Mean Profit by Frequency")
+
+- A general trend is: if the ranking is higher, then the mean profit is lower, and this is especially visible with the ranking given by frequency. This is intuitive because the more frequent the sneaker is being traded, the most likely it will return to a market-clearing price, driving the profit to zero. It is the 'rare' sneaker that gives the highest return.
+
+**Standard Deviation of Net Profits**
+
+! [alt_text](https://github.com/ZichangYe/SneakersAnalytics/blob/master/std_profit_freq.png "Standard Deviation of Profit by Frequency")
+! [alt_text](https://github.com/ZichangYe/SneakersAnalytics/blob/master/std_profit_pagerank.png "Standard Deviation of Profit by PageRank" )
+
+
+
 
 Which one is more useful? Linking back to our original question, I am trying to find the most important sneakers, which are the ones that gives highest net profit. Therefore, the next step is going to bring the metric of 'net profit = sale price - retail price', and see whether the sneaker with higher net profit on average will have a higher ranking. We will visualize this first.
 
