@@ -177,14 +177,14 @@ Which one is more useful? Linking back to our original question, I am trying to 
 ![alt_text](https://github.com/ZichangYe/SneakersAnalytics/blob/master/mean_profit_pagerank.png "Mean Profit by PageRank")
 ![alt_text](https://github.com/ZichangYe/SneakersAnalytics/blob/master/mean_profit_freq.png "Mean Profit by Frequency")
 
-- A general trend is: if the ranking is higher, then the mean profit is lower, and this is especially visible with the ranking given by frequency. This is intuitive because the more frequent the sneaker is being traded, the most likely it will return to a market-clearing price, driving the profit to zero. It is the 'rare' sneaker that gives the highest return.
+- **A general trend is: if the ranking is higher, then the mean profit is lower.** This is especially visible with the ranking given by frequency. This is intuitive because the more frequent the sneaker is being traded, the most likely it will return to a market-clearing price, driving the profit to zero. It is the 'rare' sneaker that gives the highest return.
 
 **Standard Deviation of Net Profits**
 
 ![alt_text](https://github.com/ZichangYe/SneakersAnalytics/blob/master/std_profit_pagerank.png "Standard Deviation of Profit by PageRank" )
 ![alt_text](https://github.com/ZichangYe/SneakersAnalytics/blob/master/std_profit_freq.png "Standard Deviation of Profit by Frequency")
 
-- The PageRank ranking gives a better signal of low price volatility than the ranking given by frequency. Sneakers with the highest rankings and the sneakers with the lowest rankings are the ones with most stable net profit. This is also reasonable. The prices for the most popular and the most common sneakers are settled down already, while the net profit for the least available sneakers are  stably high because there isn't enough stocks up there. 
-- The sneakers in the middle will turn out to be relatively more risky. Sometimes the prices will rocket, driving the net profit very high.
+- **The PageRank ranking gives a better signal of low price volatility than the ranking given by frequency.** Sneakers with the highest rankings and the sneakers with the lowest rankings are the ones with most stable net profit. This is also reasonable. The prices for the most popular and the most common sneakers are settled down already, while the net profit for the least available sneakers are  stably high because there isn't enough stocks up there. 
+- **The sneakers in the middle will turn out to be relatively more risky.** Sometimes the prices will rocket, driving the net profit very high.
 
 
