@@ -177,7 +177,7 @@ Which one is more useful? *Thinking back to our original question*, I am trying 
 ![alt_text](https://github.com/ZichangYe/SneakersAnalytics/blob/master/mean_profit_pagerank.png "Mean Profit by PageRank")
 ![alt_text](https://github.com/ZichangYe/SneakersAnalytics/blob/master/mean_profit_freq.png "Mean Profit by Frequency")
 
-- **A general trend is: if the ranking is higher, then the mean profit is lower.** This is especially visible with the ranking given by frequency. This ironically is the opposite of my intention, but is intuitive because the more frequent the sneaker is being traded, the most likely it will return to a market-clearing price, driving the profit to zero. It is the 'rare' sneaker that gives the highest return.
+- **A general trend is: if the ranking is higher, then the mean profit is lower.** This is especially visible with the ranking given by frequency. This ironically is the opposite of my intention, but is intuitive because the more frequent the sneaker is being traded, the most likely it will return to a market-clearing price, driving the profit to zero. It is the 'rare' sneaker that tend to gives the higher return.
 
 **Standard Deviation of Net Profits**
 
