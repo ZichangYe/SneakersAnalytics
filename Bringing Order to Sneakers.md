@@ -202,6 +202,7 @@ The ranking also illustrates some information about the stability of net profit 
 Few future updates can be implemented:
 - Update the rankings with the factor of price
 - Estimate the demand of each sneaker
+- Break the datasets into train and test subsets. Use the train set to generate ranking, and use the test set to see whether it really tells us where the more stably profitable sneaker is.
 
 
 2019 Copyright @Zichang Ye
